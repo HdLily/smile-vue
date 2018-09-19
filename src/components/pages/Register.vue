@@ -68,7 +68,7 @@ export default {
                 if (response.data.code == 200) {
                     // Toast.success(注册成功)
                     Toast.success(response.data.message)
-                    this.$router.push('/')
+                    this.$router.push('/login')
                 } else {
                     console.log(response.data.message)
                     this.openLoading=false
